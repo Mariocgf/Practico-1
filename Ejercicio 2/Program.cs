@@ -8,9 +8,7 @@
         }
         public static int InputNumber()
         {
-
             int number;
-
             do
             {
                 try

@@ -28,8 +28,7 @@
         public static void ShowPairs()
         {
             int userNumber1, userNumber2; //No se si esta permitido usar esto en C#
-            bool aux1 = false;
-            bool aux2 = false;
+            bool aux1 = false, aux2 = false;
             do
             {
                 Console.WriteLine("Ingrese el primer numero");

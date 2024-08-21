@@ -9,9 +9,28 @@
         public static string getWord()
         {
             string word;
-            Console.WriteLine("Ingrese una palabra");
-            word = Console.ReadLine();
-            return word;
+            char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            do
+            {
+                try
+                {
+                    Console.WriteLine("Ingrese una palabra");
+                    word = Console.ReadLine();
+                    for (int i = 0; i < numbers.Length; i++)
+                    {
+                        if (word.Contains(numbers[i]))
+                        {
+                            throw new Exception();
+                        }
+                    }
+                    return word;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Valor ingresado incorrecto, la palabra no puede contener numeros");
+                }
+            }
+            while (true);
         }
 
         //Solucion 1
@@ -26,7 +45,7 @@
         }
 
         //Solucion 2
-        public static void ReverseWord2 (string userWord)
+        public static void ReverseWord2(string userWord)
         {
             char[] charsWord = userWord.ToCharArray();
             Array.Reverse(charsWord);
