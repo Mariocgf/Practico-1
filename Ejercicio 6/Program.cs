@@ -1,6 +1,6 @@
 ﻿namespace Ejercicio_6
 {
-    internal class Program
+    public class Ejercicio_6
     {
         static void Main(string[] args)
         {
